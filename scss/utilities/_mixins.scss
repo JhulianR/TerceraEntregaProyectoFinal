@@ -1,0 +1,29 @@
+@mixin h1Web {
+    margin-top: 100px;
+        margin-bottom: 70px;
+        text-align: center;
+        font-family: Aldrich;
+}
+
+@mixin h2Index {
+    color: black;
+        margin-top: 50px;
+        text-align: center;
+        animation-name: agrandar;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+        font-family: Aldrich;
+}
+
+@mixin flexIndex {
+    display: flex;
+    margin-top: 200px;
+    flex-wrap: wrap;
+    background-color: black; 
+    justify-content: center;
+}
+
+@mixin imgIndex1y2 {
+    width: 600px;
+    height: 443px;
+}

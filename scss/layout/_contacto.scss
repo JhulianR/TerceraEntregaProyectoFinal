@@ -1,0 +1,8 @@
+
+@import "../utilities/variables";
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: $color-principal;
+}

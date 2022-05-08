@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/*Map*/
+header nav {
+  font-family: Aldrich; }
+  header nav .navlink {
+    color: aliceblue; }
+  header nav a img {
+    width: 130px;
+    height: 100px; }
+  header nav ul li {
+    padding-left: 120px; }
+    header nav ul li:hover {
+      text-shadow: 2px 2px blue;
+      color: #c7e391; }
+
+header h1 {
+  margin-top: 100px;
+  margin-bottom: 70px;
+  text-align: center;
+  font-family: Aldrich; }
+
+header .h2Index {
+  color: black;
+  margin-top: 50px;
+  text-align: center;
+  animation-name: agrandar;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  font-family: Aldrich; }
+
+main .flexCont {
+  display: flex;
+  margin-top: 200px;
+  flex-wrap: wrap;
+  background-color: black;
+  justify-content: center;
+  /*Tamaño imágenes*/ }
+  main .flexCont .break {
+    flex-basis: 100%;
+    height: 0; }
+  main .flexCont .flexHijo1 img {
+    width: 600px;
+    height: 443px; }
+  main .flexCont .flexHijo2 img {
+    width: 600px;
+    height: 443px; }
+  main .flexCont .flexHijo3 img {
+    width: 600px; }
+  main .flexCont .flexHijo4 img {
+    width: 600px; }
+
+main .card img {
+  height: 600px; }
+
+main .vidContainer {
+  margin: 100px 30px 5% 3.5%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+
+main .flexNosotros {
+  display: flex;
+  justify-content: center; }
+  main .flexNosotros #imgFlexNos {
+    width: 50%; }
+  main .flexNosotros .btn {
+    margin: 5% 0 5% 40%; }
+
+main .conMain {
+  height: 500px;
+  width: auto;
+  background-image: url("../img/fondool.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+main h2 {
+  padding: 20px;
+  text-align: center;
+  font-family: Aldrich;
+  color: greenyellow; }
+
+main ol {
+  text-align: left;
+  margin: 50px;
+  margin-top: 100px; }
+
+main ol li {
+  font-family: Aldrich;
+  list-style-position: inside;
+  color: aqua;
+  font-size: absolute; }
+
+main form {
+  font-family: Aldrich;
+  margin: 30px 30px 15% 30px; }
+
+main .formu {
+  margin-left: 30px;
+  margin-right: 800px; }
+
+/*Animaciones*/
+@keyframes agrandar {
+  0%, 100% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(1.05, 1.05); } }
+
+@keyframes movimiento {
+  0%, 100% {
+    transform: translate(0, 0); }
+  50% {
+    transform: translate(30px, 0); } }
+
+footer {
+  padding: 20px;
+  bottom: 0;
+  font-family: orbitron;
+  text-align: center;
+  background-color: #18b5d1;
+  width: 100%;
+  position: static; }
+
+@media only screen and (max-width: 600px) {
+  header h1 {
+    margin-top: 8rem;
+    font-size: 1.5rem; }
+  header h2 {
+    font-size: 1rem; }
+  main .flexCont {
+    margin-top: 8rem; }
+  main .flexHijo1 img {
+    width: 400px;
+    height: 335px; }
+  main .flexHijo2 img {
+    width: 400px;
+    height: 335px; }
+  main .flexHijo3 img {
+    width: 400px; }
+  main .flexHijo4 img {
+    width: 400px; }
+  main .vidContainer {
+    margin: 0 10 0 3.5%;
+    height: 200vh;
+    display: grid;
+    grid-template-columns: auto;
+    padding-left: 26px; }
+  main .flexNosotros {
+    flex-direction: column;
+    text-align: justify;
+    overflow: scroll; }
+    main .flexNosotros #imgFlexNos {
+      width: 100%; }
+      main .flexNosotros #imgFlexNos .btnFlex {
+        display: flex;
+        justify-content: start; }
+        main .flexNosotros #imgFlexNos .btnFlex .btn {
+          margin-right: 35%; }
+      main .flexNosotros #imgFlexNos .btnFlex3 {
+        display: flex;
+        justify-content: center; }
+        main .flexNosotros #imgFlexNos .btnFlex3 .btn {
+          margin-left: 0; }
+    main .flexNosotros h2 {
+      font-size: 0.9em; }
+    main .flexNosotros p {
+      font-size: 0.75em;
+      overflow: scroll; }
+    main .flexNosotros .card-text {
+      overflow: scroll; }
+  main .conMain {
+    height: 400px; }
+  main form {
+    font-family: Aldrich;
+    margin: 30px 30px 33% 30px; }
+  main .edadB {
+    margin-left: 7%; }
+  main .form-control {
+    width: 300px; }
+  .divFooter {
+    margin-top: 100px; }
+    .divFooter footer {
+      font-size: 0.7rem;
+      width: auto; } }
